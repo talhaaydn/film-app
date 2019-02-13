@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home & FilmApp - HTML - CSS - Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-film" aria-hidden="true"></i>
+                FilmApp
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav active">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="add-film.html">Add Film <span class="sr-only">(current)</span></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-4" id="filmList">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 card-film">
+                <div class="card">
+                    <img src="img/harry-potter.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter 7</h5>
+                        <h6 class="film-type">Category: Aksiyon, Bilim Kurgu</h6>
+                    </div>
+                    <div class="imdb-score">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        8.0/10
+                    </div>
+                    <a class="information" href="#">Details</a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 card-film">
+                <div class="card">
+                    <img src="img/esaretin-bedeli.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Shawshank Redemption</h5>
+                        <h6 class="film-type">Category: Aksiyon, Bilim Kurgu</h6>
+                    </div>
+                    <div class="imdb-score">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        8.0/10
+                    </div>
+                    <a class="information" href="#">Details</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    
+    <script src="add-film.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
